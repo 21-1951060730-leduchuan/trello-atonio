@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { deleteBoard } from "./delete-board";
+import { deleteBoard } from "../../../../../actions/delete-board";
 import { FormDelete } from "./form-delete";
 
 interface BoardProps {
