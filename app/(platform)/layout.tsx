@@ -1,4 +1,5 @@
 import { ClerkProvider } from "@clerk/nextjs"
+import { Toaster } from "sonner"
 
 
 const PlatformLayout =({
@@ -6,8 +7,10 @@ const PlatformLayout =({
 :{children : React.ReactNode})=>{
     return (
         <ClerkProvider>
+            <Toaster/>
             {children}
         </ClerkProvider>
+       
     )
 }
 export default PlatformLayout

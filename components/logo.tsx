@@ -11,7 +11,7 @@ export const Logo = () => {
         <p
           className={cn("text-lg text-neutral-700 pb-1", headingFont.className)}
         >
-          Taskify
+          Trello
         </p>
       </div>
     </Link>
