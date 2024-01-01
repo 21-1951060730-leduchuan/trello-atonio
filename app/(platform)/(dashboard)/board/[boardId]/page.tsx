@@ -17,7 +17,7 @@ const BoardIdPage = async ({ params }: BoardIdProps) => {
     orderBy:{order:'asc'}
   });
   return (
-  <div className="p-4 h-full overflow-x-auto">
+  <div className="p-4 h-[670px] overflow-x-auto">
     <ListContainer boardId={params.boardId} data={lists}/>
   
   </div>

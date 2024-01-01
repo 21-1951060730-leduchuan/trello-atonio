@@ -24,10 +24,10 @@ export const BoardTitleForm = ({ data }: BoardTitleFormProps) => {
   const [isEditing, setIsEditing] = useState(false);
   const enableEditing = () => {
     setIsEditing(true);
-    // setTimeout(()=>{
-    //     inputRef.current?.focus()
-    //     inputRef.current?.select()
-    // })
+    setTimeout(()=>{
+        inputRef.current?.focus()
+        inputRef.current?.select()
+    })
   };
   const disableEditing = () => {
     setIsEditing(false);
