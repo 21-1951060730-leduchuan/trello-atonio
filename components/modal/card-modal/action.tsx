@@ -1,6 +1,7 @@
 'use client'
 
 import { copyCard } from "@/actions/copy-card"
+import { deleteCard } from "@/actions/delete-card"
 
 import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
@@ -23,7 +24,7 @@ export const Actions = ({data}:ActionsProps)=>{
         },
         onError:(error)=>{toast.error(error)}
     })
-    const {execute:executeDeleteCard , isLoading:isLoadingDelete }= useAction(copyCard,{
+    const {execute:executeDeleteCard , isLoading:isLoadingDelete }= useAction(deleteCard,{
         onSuccess:(data)=>{
             toast.success(`Card "${data.title}" delete successfully`)
             cardModal.onClose()
